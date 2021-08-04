@@ -6,7 +6,7 @@ def num_guess():
         guess = int(input("guess: "))
         chance -= 1
         diff = abs(guess - num)
-        if guess == num and chance != 0:
+        if guess == num:
             print("guessed correctly :)")
             print("Chances left: {}".format(chance))
             break
